@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Image from "@crystallize/react-image";
+import { Image } from "@crystallize/react-image";
 
 import Video from "components/video";
 
@@ -34,14 +34,7 @@ const Outer = styled.div`
 export default function Media({ images, videos, show, nolazy }) {
   if (!!videos) {
     return (
-      <StyledVideo
-        autoplay
-        playsInline
-        loop
-        play={show}
-        nolazy={nolazy}
-        {...videos?.[0]}
-      />
+      <StyledVideo autoPlay playsInline loop play={show} {...videos?.[0]} />
     );
   }
 
