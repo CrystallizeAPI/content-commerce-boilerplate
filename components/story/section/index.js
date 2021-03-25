@@ -19,10 +19,10 @@ const CoverMedia = styled.div`
   z-index: -1;
   left: 0;
   width: 100%;
-
   height: 100%;
   overflow: hidden;
   transition: opacity 0.3s ease-in-out 0ms;
+
   &:before {
     position: absolute;
     content: "";
